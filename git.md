@@ -9,3 +9,16 @@ git remote add origin 仓库地址
 git push -u origin main
 
 
+# 提交
+git add .
+git commit --amend
+git push -u origin main --force-with-lease
+
+
+# 修改本地与远程连接
+git remote -v
+git remote set-url origin https://github.com/ART-BP/motion_control.git
+
+# 拉取远程
+# 拉取远程main分支
+git pull origin main
