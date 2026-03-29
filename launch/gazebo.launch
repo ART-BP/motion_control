@@ -2,6 +2,9 @@
   <arg name="gui" default="true"/>
   <arg name="rviz" default="true"/>
   <arg name="enable_leg_hold" default="true"/>
+  <arg name="start_paused" default="true"/>
+  <arg name="auto_unpause" default="true"/>
+  <arg name="unpause_delay" default="5.0"/>
   <arg name="x" default="0.0"/>
   <arg name="y" default="0.0"/>
   <arg name="z" default="0.35"/>
@@ -9,7 +12,7 @@
   <param name="robot_description" textfile="$(find motion_control)/urdf/urdf/go2w_description.urdf"/>
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <arg name="paused" value="false"/>
+    <arg name="paused" value="$(arg start_paused)"/>
     <arg name="use_sim_time" value="true"/>
     <arg name="gui" value="$(arg gui)"/>
   </include>
@@ -38,6 +41,11 @@
       <param name="duration" value="0.0"/>
     </node>
   </group>
+
+  <node if="$(arg auto_unpause)" pkg="motion_control" type="unpause_when_ready.py" name="unpause_when_ready" output="screen">
+    <param name="wait_for" value="$(arg unpause_delay)"/>
+    <param name="service_name" value="/gazebo/unpause_physics"/>
+  </node>
 
   <node if="$(arg rviz)" pkg="rviz" type="rviz" name="rviz" args="-d $(find motion_control)/rviz/motion_control.rviz"/>
 </launch>
