@@ -1,13 +1,13 @@
 #include "motion_control/motion_control_node.h"
 #include <tf/tf.h>
 
-bool MotionControlNode::enable_motion_control_ = false;
-
 
 MotionControlNode::MotionControlNode(double look_ahead_distance, PID* xpid, PID* ypid, PID* thetapid) {
+    enable_motion_control_ = false;
     pure_pursuit_ = new PurePursuit(look_ahead_distance, xpid, ypid, thetapid);
     path_ = nullptr;
     path_length_ = 0;
+    last_time_ = ros::Time::now().toSec();
 }
 
 void MotionControlNode::odomCallback(const nav_msgs::Odometry::ConstPtr& msg) {
@@ -18,7 +18,10 @@ void MotionControlNode::odomCallback(const nav_msgs::Odometry::ConstPtr& msg) {
     current_position_.y = msg->pose.pose.position.y;
     current_position_.theta = tf::getYaw(msg->pose.pose.orientation);
     CmdVel cmd_vel(0.0, 0.0, 0.0);
-    pure_pursuit_->motionControl(current_position_, path_, path_length_, 0.1, cmd_vel);
+    double current_time = ros::Time::now().toSec();
+    double dt = current_time - last_time_;
+    last_time_ = current_time;
+    pure_pursuit_->motionControl(current_position_, path_, path_length_, dt, cmd_vel);
 
     geometry_msgs::Twist twist_msg;
     twist_msg.linear.x = cmd_vel.linear_x;
@@ -36,6 +39,7 @@ void MotionControlNode::odomCallback(const nav_msgs::Odometry::ConstPtr& msg) {
 }
 
 void MotionControlNode::pathCallback(const nav_msgs::Path::ConstPtr& msg) {
+    ROS_INFO("Received path message with %zu poses", msg->poses.size());
     path_length_ = msg->poses.size();
 
     if(path_length_ <= 0) {
@@ -43,6 +47,7 @@ void MotionControlNode::pathCallback(const nav_msgs::Path::ConstPtr& msg) {
             delete[] path_;
             path_ = nullptr;
         }
+        enable_motion_control_ = false;
         return;
     }
 
@@ -68,6 +73,9 @@ int main(int argc, char** argv) {
     motion_control_node.cmd_vel_pub_ = nh.advertise<geometry_msgs::Twist>("cmd_vel", 10);
     motion_control_node.odom_sub_ = nh.subscribe("odom", 10, &MotionControlNode::odomCallback, &motion_control_node);
     motion_control_node.path_sub_ = nh.subscribe("path", 10, &MotionControlNode::pathCallback, &motion_control_node);
+    ros::Duration(1.0).sleep(); // 等待发布者和订阅者建立连接
+
+    ROS_INFO("Motion Control Node is running...");
 
     ros::spin();
     return 0;
