@@ -52,7 +52,6 @@
     <origin xyz="0.22 0 0.13" rpy="0 0 0" />
     <parent link="base_link" />
     <child link="header_lidar" />
-    <axis xyz="0 0 0" />
   </joint>
 
   <link name="Head_upper">
@@ -72,7 +71,6 @@
     <origin xyz="0.285 0 0.01" rpy="0 0 0" />
     <parent link="base_link" />
     <child link="Head_upper" />
-    <axis xyz="0 0 0" />
   </joint>
   <link name="Head_lower">
     <inertial>
@@ -91,7 +89,6 @@
     <origin xyz="0.008 0 -0.07" rpy="0 0 0" />
     <parent link="Head_upper" />
     <child link="Head_lower" />
-    <axis xyz="0 0 0" />
   </joint>
   <link name="FL_hip">
     <inertial>
@@ -112,13 +109,10 @@
       </geometry>
     </collision>
   </link>
-  <joint name="FL_hip_joint" type="revolute">
-    <origin xyz="0.1934 0.0465 0" rpy="0 0 0" />
+  <joint name="FL_hip_joint" type="fixed">
+    <origin xyz="0.1934 0.0465 0" rpy="0.08 0 0" />
     <parent link="base_link" />
     <child link="FL_hip" />
-    <axis xyz="1 0 0" />
-    <dynamics damping="2.0" friction="0.2" />
-    <limit lower="-1.0472" upper="1.0472" effort="23.7" velocity="30.1" />
   </joint>
   <link name="FL_thigh">
     <inertial>
@@ -139,13 +133,10 @@
       </geometry>
     </collision>
   </link>
-  <joint name="FL_thigh_joint" type="revolute">
-    <origin xyz="0 0.0955 0" rpy="0 0 0" />
+  <joint name="FL_thigh_joint" type="fixed">
+    <origin xyz="0 0.0955 0" rpy="0 0.85 0" />
     <parent link="FL_hip" />
     <child link="FL_thigh" />
-    <axis xyz="0 1 0" />
-    <dynamics damping="2.0" friction="0.2" />
-    <limit lower="-1.5707963267948966" upper="3.4907" effort="23.7" velocity="30.1" />
   </joint>
   <link name="FL_calf">
     <inertial>
@@ -169,13 +160,10 @@
       </geometry>
     </collision>
   </link>
-  <joint name="FL_calf_joint" type="revolute">
-    <origin xyz="0 0 -0.213" rpy="0 0 0" />
+  <joint name="FL_calf_joint" type="fixed">
+    <origin xyz="0 0 -0.213" rpy="0 -1.55 0" />
     <parent link="FL_thigh" />
     <child link="FL_calf" />
-    <axis xyz="0 1 0" />
-    <dynamics damping="2.0" friction="0.2" />
-    <limit lower="-2.7227" upper="-0.83776" effort="35.55" velocity="20.07" />
   </joint>
   <link name="FL_calflower">
     <collision>
@@ -189,7 +177,6 @@
     <origin xyz="0.020 0 -0.148" rpy="0 0.05 0" />
     <parent link="FL_calf" />
     <child link="FL_calflower" />
-    <axis xyz="0 0 0" />
   </joint>
   <link name="FL_calflower1">
     <collision>
@@ -203,7 +190,6 @@
     <origin xyz="-0.01 0 -0.04" rpy="0 0.48 0" />
     <parent link="FL_calflower" />
     <child link="FL_calflower1" />
-    <axis xyz="0 0 0" />
   </joint>
 
   <link name="FL_foot_motor">
@@ -224,7 +210,6 @@
     <origin xyz="-0.00 0.01 -0.2264" rpy="0 0.0 0" />
     <parent link="FL_calf" />
     <child link="FL_foot_motor" />
-    <axis xyz="0 0 0" />
   </joint>
 
   <link name="FL_foot">
@@ -277,13 +262,10 @@
       </geometry>
     </collision>
   </link>
-  <joint name="FR_hip_joint" type="revolute">
-    <origin xyz="0.1934 -0.0465 0" rpy="0 0 0" />
+  <joint name="FR_hip_joint" type="fixed">
+    <origin xyz="0.1934 -0.0465 0" rpy="-0.08 0 0" />
     <parent link="base_link" />
     <child link="FR_hip" />
-    <axis xyz="1 0 0" />
-    <dynamics damping="2.0" friction="0.2" />
-    <limit lower="-1.0472" upper="1.0472" effort="23.7" velocity="30.1" />
   </joint>
   <link name="FR_thigh">
     <inertial>
@@ -304,13 +286,10 @@
       </geometry>
     </collision>
   </link>
-  <joint name="FR_thigh_joint" type="revolute">
-    <origin xyz="0 -0.0955 0" rpy="0 0 0" />
+  <joint name="FR_thigh_joint" type="fixed">
+    <origin xyz="0 -0.0955 0" rpy="0 0.85 0" />
     <parent link="FR_hip" />
     <child link="FR_thigh" />
-    <axis xyz="0 1 0" />
-    <dynamics damping="2.0" friction="0.2" />
-    <limit lower="-1.5707963267948966" upper="3.4907" effort="23.7" velocity="30.1" />
   </joint>
   <link name="FR_calf">
     <inertial>
@@ -334,13 +313,10 @@
       </geometry>
     </collision>
   </link>
-  <joint name="FR_calf_joint" type="revolute">
-    <origin xyz="0 0 -0.213" rpy="0 0 0" />
+  <joint name="FR_calf_joint" type="fixed">
+    <origin xyz="0 0 -0.213" rpy="0 -1.55 0" />
     <parent link="FR_thigh" />
     <child link="FR_calf" />
-    <axis xyz="0 1 0" />
-    <dynamics damping="2.0" friction="0.2" />
-    <limit lower="-2.7227" upper="-0.83776" effort="35.55" velocity="20.07" />
   </joint>
   <link name="FR_calflower">
     <collision>
@@ -354,7 +330,6 @@
     <origin xyz="0.020 0 -0.148" rpy="0 0.05 0" />
     <parent link="FR_calf" />
     <child link="FR_calflower" />
-    <axis xyz="0 0 0" />
   </joint>
   <link name="FR_calflower1">
     <collision>
@@ -368,7 +343,6 @@
     <origin xyz="-0.01 0 -0.04" rpy="0 0.48 0" />
     <parent link="FR_calflower" />
     <child link="FR_calflower1" />
-    <axis xyz="0 0 0" />
   </joint>
 
   <link name="FR_foot_motor">
@@ -389,7 +363,6 @@
     <origin xyz="0.0 -0.01 -0.2264" rpy="0 0.0 0" />
     <parent link="FR_calf" />
     <child link="FR_foot_motor" />
-    <axis xyz="0 0 0" />
   </joint>
 
   <link name="FR_foot">
@@ -442,13 +415,10 @@
       </geometry>
     </collision>
   </link>
-  <joint name="RL_hip_joint" type="revolute">
-    <origin xyz="-0.1934 0.0465 0" rpy="0 0 0" />
+  <joint name="RL_hip_joint" type="fixed">
+    <origin xyz="-0.1934 0.0465 0" rpy="0.08 0 0" />
     <parent link="base_link" />
     <child link="RL_hip" />
-    <axis xyz="1 0 0" />
-    <dynamics damping="2.0" friction="0.2" />
-    <limit lower="-1.0472" upper="1.0472" effort="23.7" velocity="30.1" />
   </joint>
   <link name="RL_thigh">
     <inertial>
@@ -469,13 +439,10 @@
       </geometry>
     </collision>
   </link>
-  <joint name="RL_thigh_joint" type="revolute">
-    <origin xyz="0 0.0955 0" rpy="0 0 0" />
+  <joint name="RL_thigh_joint" type="fixed">
+    <origin xyz="0 0.0955 0" rpy="0 1.0 0" />
     <parent link="RL_hip" />
     <child link="RL_thigh" />
-    <axis xyz="0 1 0" />
-    <dynamics damping="2.0" friction="0.2" />
-    <limit lower="-0.5236" upper="4.5379" effort="23.7" velocity="30.1" />
   </joint>
   <link name="RL_calf">
     <inertial>
@@ -499,13 +466,10 @@
       </geometry>
     </collision>
   </link>
-  <joint name="RL_calf_joint" type="revolute">
-    <origin xyz="0 0 -0.213" rpy="0 0 0" />
+  <joint name="RL_calf_joint" type="fixed">
+    <origin xyz="0 0 -0.213" rpy="0 -1.7 0" />
     <parent link="RL_thigh" />
     <child link="RL_calf" />
-    <axis xyz="0 1 0" />
-    <dynamics damping="2.0" friction="0.2" />
-    <limit lower="-2.7227" upper="-0.83776" effort="35.55" velocity="20.07" />
   </joint>
   <link name="RL_calflower">
     <collision>
@@ -519,7 +483,6 @@
     <origin xyz="0.020 0 -0.148" rpy="0 0.05 0" />
     <parent link="RL_calf" />
     <child link="RL_calflower" />
-    <axis xyz="0 0 0" />
   </joint>
   <link name="RL_calflower1">
     <collision>
@@ -533,7 +496,6 @@
     <origin xyz="-0.01 0 -0.04" rpy="0 0.48 0" />
     <parent link="RL_calflower" />
     <child link="RL_calflower1" />
-    <axis xyz="0 0 0" />
   </joint>
 
   <link name="RL_foot_motor">
@@ -554,7 +516,6 @@
   <origin xyz="0.00 0.01 -0.2264" rpy="0 0.0 0" />
   <parent link="RL_calf" />
   <child link="RL_foot_motor" />
-  <axis xyz="0 0 0" />
 </joint>
 
 
@@ -608,13 +569,10 @@
       </geometry>
     </collision>
   </link>
-  <joint name="RR_hip_joint" type="revolute">
-    <origin xyz="-0.1934 -0.0465 0" rpy="0 0 0" />
+  <joint name="RR_hip_joint" type="fixed">
+    <origin xyz="-0.1934 -0.0465 0" rpy="-0.08 0 0" />
     <parent link="base_link" />
     <child link="RR_hip" />
-    <axis xyz="1 0 0" />
-    <dynamics damping="2.0" friction="0.2" />
-    <limit lower="-1.0472" upper="1.0472" effort="23.7" velocity="30.1" />
   </joint>
   <link name="RR_thigh">
     <inertial>
@@ -635,13 +593,10 @@
       </geometry>
     </collision>
   </link>
-  <joint name="RR_thigh_joint" type="revolute">
-    <origin xyz="0 -0.0955 0" rpy="0 0 0" />
+  <joint name="RR_thigh_joint" type="fixed">
+    <origin xyz="0 -0.0955 0" rpy="0 1.0 0" />
     <parent link="RR_hip" />
     <child link="RR_thigh" />
-    <axis xyz="0 1 0" />
-    <dynamics damping="2.0" friction="0.2" />
-    <limit lower="-0.5236" upper="4.5379" effort="23.7" velocity="30.1" />
   </joint>
   <link name="RR_calf">
     <inertial>
@@ -665,13 +620,10 @@
       </geometry>
     </collision>
   </link>
-  <joint name="RR_calf_joint" type="revolute">
-    <origin xyz="0 0 -0.213" rpy="0 0 0" />
+  <joint name="RR_calf_joint" type="fixed">
+    <origin xyz="0 0 -0.213" rpy="0 -1.7 0" />
     <parent link="RR_thigh" />
     <child link="RR_calf" />
-    <axis xyz="0 1 0" />
-    <dynamics damping="2.0" friction="0.2" />
-    <limit lower="-2.7227" upper="-0.83776" effort="35.55" velocity="20.07" />
   </joint>
   <link name="RR_calflower">
     <collision>
@@ -685,7 +637,6 @@
     <origin xyz="0.020 0 -0.148" rpy="0 0.05 0" />
     <parent link="RR_calf" />
     <child link="RR_calflower" />
-    <axis xyz="0 0 0" />
   </joint>
   <link name="RR_calflower1">
     <collision>
@@ -699,7 +650,6 @@
     <origin xyz="-0.01 0 -0.04" rpy="0 0.48 0" />
     <parent link="RR_calflower" />
     <child link="RR_calflower1" />
-    <axis xyz="0 0 0" />
   </joint>
 
   <link name="RR_foot_motor">
@@ -720,7 +670,6 @@
   <origin xyz="0.00 -0.01 -0.2264" rpy="0 0.0 0" />
   <parent link="RR_calf" />
   <child link="RR_foot_motor" />
-  <axis xyz="0 0 0" />
 </joint>
 
   <link name="RR_foot">
@@ -764,7 +713,6 @@
     <origin xyz="-0.02557 0 0.04232" rpy="0 0 0" />
     <parent link="base_link" />
     <child link="imu" />
-    <axis xyz="0 0 0" />
   </joint>
   <link name="radar">
     <inertial>
@@ -777,138 +725,7 @@
     <origin xyz="0.28945 0 -0.046825" rpy="0 2.8782 0" />
     <parent link="base_link" />
     <child link="radar" />
-    <axis xyz="0 0 0" />
   </joint>
-
-  <gazebo>
-    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
-      <legacyModeNS>true</legacyModeNS>
-    </plugin>
-  </gazebo>
-
-  <transmission name="FL_hip_joint_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="FL_hip_joint">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="FL_hip_joint_motor">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
-  <transmission name="FL_thigh_joint_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="FL_thigh_joint">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="FL_thigh_joint_motor">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
-  <transmission name="FL_calf_joint_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="FL_calf_joint">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="FL_calf_joint_motor">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
-
-  <transmission name="FR_hip_joint_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="FR_hip_joint">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="FR_hip_joint_motor">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
-  <transmission name="FR_thigh_joint_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="FR_thigh_joint">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="FR_thigh_joint_motor">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
-  <transmission name="FR_calf_joint_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="FR_calf_joint">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="FR_calf_joint_motor">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
-
-  <transmission name="RL_hip_joint_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="RL_hip_joint">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="RL_hip_joint_motor">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
-  <transmission name="RL_thigh_joint_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="RL_thigh_joint">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="RL_thigh_joint_motor">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
-  <transmission name="RL_calf_joint_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="RL_calf_joint">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="RL_calf_joint_motor">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
-
-  <transmission name="RR_hip_joint_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="RR_hip_joint">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="RR_hip_joint_motor">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
-  <transmission name="RR_thigh_joint_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="RR_thigh_joint">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="RR_thigh_joint_motor">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
-  <transmission name="RR_calf_joint_trans">
-    <type>transmission_interface/SimpleTransmission</type>
-    <joint name="RR_calf_joint">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-    </joint>
-    <actuator name="RR_calf_joint_motor">
-      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-      <mechanicalReduction>1</mechanicalReduction>
-    </actuator>
-  </transmission>
 
   <gazebo>
     <plugin name="go2w_wheel_joint_state_publisher" filename="libgazebo_ros_joint_state_publisher.so">
@@ -925,7 +742,7 @@
       <rightRearJoint>RR_foot_joint</rightRearJoint>
       <wheelSeparation>0.213</wheelSeparation>
       <wheelDiameter>0.10</wheelDiameter>
-      <torque>5.0</torque>
+      <torque>10.0</torque>
       <commandTopic>cmd_vel</commandTopic>
       <odometryTopic>odom</odometryTopic>
       <odometryFrame>odom</odometryFrame>

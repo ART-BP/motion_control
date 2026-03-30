@@ -1,8 +1,13 @@
 <launch>
+  <arg name="use_map" default="true"/>
+  <arg name="map_yaml" default="$(find motion_control)/maps/follow_sense.yaml"/>
+
   <param name="robot_description" textfile="$(find motion_control)/urdf/urdf/go2w_description.urdf"/>
 
   <node pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" name="joint_state_publisher"/>
   <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher"/>
+  <node if="$(arg use_map)" pkg="map_server" type="map_server" name="map_server" args="$(arg map_yaml)"/>
+  <node if="$(arg use_map)" pkg="tf2_ros" type="static_transform_publisher" name="map_to_odom_tf" args="0 0 0 0 0 0 map odom"/>
   <node pkg="rviz" type="rviz" name="rviz" 
   args="-d $(find motion_control)/rviz/motion_control.rviz"/>
 </launch>
