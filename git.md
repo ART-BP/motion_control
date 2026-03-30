@@ -8,4 +8,4 @@ git branch -M main
 git remote add origin 仓库地址
 git push -u origin main
 
-
+git pull origin main

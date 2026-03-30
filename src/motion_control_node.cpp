@@ -25,7 +25,8 @@ void MotionControlNode::odomCallback(const nav_msgs::Odometry::ConstPtr& msg) {
     twist_msg.linear.y = cmd_vel.linear_y;
     twist_msg.angular.z = cmd_vel.angular_z;
 
-    if(pure_pursuit_->isGoalReached(current_position_, path_[-1])){
+    if(path_ != nullptr && path_length_ > 0 &&
+       pure_pursuit_->isGoalReached(current_position_, path_[path_length_ - 1])){
         twist_msg.linear.x = 0.0;
         twist_msg.linear.y = 0.0;
         twist_msg.angular.z = 0.0;
