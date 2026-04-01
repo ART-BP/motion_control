@@ -166,7 +166,6 @@
     <xacro:wall name="wall_2" x="0" y="-14.5" z="1" sx="30" sy="1" sz="${height}"/>
     <xacro:wall name="wall_3" x="14.5" y="0" z="1" sx="1" sy="28" sz="${height}"/>
     <xacro:wall name="wall_4" x="-14.5" y="0" z="1" sx="1" sy="28" sz="${height}"/>
-    <xacro:wall name="wall_5" x="10" y="-10" z="1" sx="8" sy="2" sz="${height}"/>
-    <xacro:wall name="wall_6" x="6" y="-5" z="1" sx="8" sy="2" sz="${height}"/>
+    
   </world>
 </sdf>

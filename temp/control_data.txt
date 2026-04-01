@@ -1,0 +1,162 @@
+[ INFO] [1775033721.285562717, 56.580000000]: Current Position - X: 0.91, Y: -0.02, Theta: 0.12
+[ INFO] [1775033721.285646978, 56.580000000]: Lookahead Point - X: 1.45, Y: 2.08, Theta: 1.32
+[ INFO] [1775033721.285675140, 56.580000000]: Control Output - Linear X: 0.61, Linear Y: 1.00, Angular Z: 1.00
+[ INFO] [1775033721.572514648, 56.681000000]: Current Position - X: 0.89, Y: -0.02, Theta: 0.12
+[ INFO] [1775033721.572593469, 56.681000000]: Lookahead Point - X: 1.45, Y: 2.08, Theta: 1.31
+[ INFO] [1775033721.572621151, 56.681000000]: Control Output - Linear X: 0.57, Linear Y: 1.00, Angular Z: 1.00
+[ INFO] [1775033721.773841689, 56.780000000]: Current Position - X: 0.93, Y: -0.02, Theta: 0.12
+[ INFO] [1775033721.773956352, 56.780000000]: Lookahead Point - X: 1.45, Y: 2.08, Theta: 1.33
+[ INFO] [1775033721.774015299, 56.780000000]: Control Output - Linear X: 0.48, Linear Y: 1.00, Angular Z: 1.00
+[ INFO] [1775033722.062945943, 56.880000000]: Current Position - X: 1.01, Y: -0.01, Theta: 0.13
+[ INFO] [1775033722.063068190, 56.880000000]: Lookahead Point - X: -0.01, Y: 0.00, Theta: 3.13
+[ INFO] [1775033722.063125314, 56.880000000]: Control Output - Linear X: -1.00, Linear Y: -1.00, Angular Z: 1.00
+[ INFO] [1775033722.315847448, 56.980000000]: Current Position - X: 1.05, Y: -0.01, Theta: 0.16
+[ INFO] [1775033722.315945726, 56.980000000]: Lookahead Point - X: -0.01, Y: 0.00, Theta: 3.13
+[ INFO] [1775033722.315974752, 56.980000000]: Control Output - Linear X: -1.00, Linear Y: 0.01, Angular Z: 1.00
+[ INFO] [1775033722.485244267, 57.080000000]: Current Position - X: 1.03, Y: -0.02, Theta: 0.17
+[ INFO] [1775033722.485366386, 57.080000000]: Lookahead Point - X: -0.01, Y: 0.00, Theta: 3.13
+[ INFO] [1775033722.485423766, 57.080000000]: Control Output - Linear X: -1.00, Linear Y: 0.02, Angular Z: 1.00
+[ INFO] [1775033722.653954386, 57.180000000]: Current Position - X: 0.97, Y: -0.03, Theta: 0.18
+[ INFO] [1775033722.654039384, 57.180000000]: Lookahead Point - X: 1.45, Y: 2.08, Theta: 1.35
+[ INFO] [1775033722.654064825, 57.180000000]: Control Output - Linear X: 1.00, Linear Y: 1.00, Angular Z: -0.62
+[ INFO] [1775033722.888894536, 57.280000000]: Current Position - X: 0.90, Y: -0.04, Theta: 0.20
+[ INFO] [1775033722.888982765, 57.280000000]: Lookahead Point - X: 1.45, Y: 2.08, Theta: 1.32
+[ INFO] [1775033722.889009903, 57.280000000]: Control Output - Linear X: 0.61, Linear Y: 1.00, Angular Z: 1.00
+[ INFO] [1775033723.174206005, 57.380000000]: Current Position - X: 0.91, Y: -0.04, Theta: 0.19
+[ INFO] [1775033723.174288506, 57.380000000]: Lookahead Point - X: 1.45, Y: 2.08, Theta: 1.32
+[ INFO] [1775033723.174316284, 57.380000000]: Control Output - Linear X: 0.53, Linear Y: 1.00, Angular Z: 1.00
+[ INFO] [1775033723.387827096, 57.480000000]: Current Position - X: 0.96, Y: -0.03, Theta: 0.19
+[ INFO] [1775033723.387912573, 57.480000000]: Lookahead Point - X: 1.45, Y: 2.08, Theta: 1.34
+[ INFO] [1775033723.387941823, 57.480000000]: Control Output - Linear X: 0.44, Linear Y: 1.00, Angular Z: 1.00
+[ INFO] [1775033723.694768204, 57.580000000]: Current Position - X: 1.04, Y: -0.02, Theta: 0.21
+[ INFO] [1775033723.694871795, 57.580000000]: Lookahead Point - X: -0.01, Y: 0.00, Theta: 3.12
+[ INFO] [1775033723.694921270, 57.580000000]: Control Output - Linear X: -1.00, Linear Y: -1.00, Angular Z: 1.00
+[ INFO] [1775033723.995340399, 57.680000000]: Current Position - X: 1.06, Y: -0.02, Theta: 0.26
+[ INFO] [1775033723.995432373, 57.680000000]: Lookahead Point - X: -0.01, Y: 0.00, Theta: 3.12
+[ INFO] [1775033723.995463607, 57.680000000]: Control Output - Linear X: -1.00, Linear Y: 0.03, Angular Z: 1.00
+[ INFO] [1775033724.207924832, 57.780000000]: Current Position - X: 1.03, Y: -0.04, Theta: 0.27
+[ INFO] [1775033724.208023847, 57.780000000]: Lookahead Point - X: -0.01, Y: 0.00, Theta: 3.11
+[ INFO] [1775033724.208054856, 57.780000000]: Control Output - Linear X: -1.00, Linear Y: 0.05, Angular Z: 1.00
+[ INFO] [1775033724.483914593, 57.880000000]: Current Position - X: 0.94, Y: -0.06, Theta: 0.28
+[ INFO] [1775033724.484027432, 57.880000000]: Lookahead Point - X: 1.45, Y: 2.08, Theta: 1.34
+[ INFO] [1775033724.484074027, 57.880000000]: Control Output - Linear X: 1.00, Linear Y: 1.00, Angular Z: -0.72
+[ INFO] [1775033724.737087528, 57.980000000]: Current Position - X: 0.91, Y: -0.07, Theta: 0.29
+[ INFO] [1775033724.737169709, 57.980000000]: Lookahead Point - X: 1.45, Y: 2.08, Theta: 1.32
+[ INFO] [1775033724.737196206, 57.980000000]: Control Output - Linear X: 0.57, Linear Y: 1.00, Angular Z: 1.00
+[ INFO] [1775033724.902784917, 58.080000000]: Current Position - X: 0.92, Y: -0.07, Theta: 0.29
+[ INFO] [1775033724.902896956, 58.080000000]: Lookahead Point - X: 1.45, Y: 2.08, Theta: 1.33
+[ INFO] [1775033724.902928862, 58.080000000]: Control Output - Linear X: 0.51, Linear Y: 1.00, Angular Z: 1.00
+[ INFO] [1775033725.069058721, 58.180000000]: Current Position - X: 0.98, Y: -0.05, Theta: 0.29
+[ INFO] [1775033725.069146054, 58.180000000]: Lookahead Point - X: 1.45, Y: 2.08, Theta: 1.36
+[ INFO] [1775033725.069199178, 58.180000000]: Control Output - Linear X: 0.41, Linear Y: 1.00, Angular Z: 1.00
+[ INFO] [1775033725.293552810, 58.280000000]: Current Position - X: 1.07, Y: -0.02, Theta: 0.30
+[ INFO] [1775033725.293649488, 58.280000000]: Lookahead Point - X: -0.01, Y: 0.00, Theta: 3.13
+[ INFO] [1775033725.293689779, 58.280000000]: Control Output - Linear X: -1.00, Linear Y: -1.00, Angular Z: 1.00
+[ INFO] [1775033725.535630083, 58.380000000]: Current Position - X: 1.12, Y: -0.00, Theta: 0.31
+[ INFO] [1775033725.535714632, 58.380000000]: Lookahead Point - X: -0.01, Y: 0.00, Theta: 3.14
+[ INFO] [1775033725.535744650, 58.380000000]: Control Output - Linear X: -1.00, Linear Y: -0.01, Angular Z: 1.00
+[ INFO] [1775033725.702743963, 58.480000000]: Current Position - X: 1.12, Y: -0.00, Theta: 0.31
+[ INFO] [1775033725.702844097, 58.480000000]: Lookahead Point - X: -0.01, Y: 0.00, Theta: 3.14
+[ INFO] [1775033725.702893444, 58.480000000]: Control Output - Linear X: -1.00, Linear Y: 0.00, Angular Z: 1.00
+[ INFO] [1775033725.869503676, 58.580000000]: Current Position - X: 1.09, Y: -0.01, Theta: 0.31
+[ INFO] [1775033725.869594818, 58.580000000]: Lookahead Point - X: -0.01, Y: 0.00, Theta: 3.13
+[ INFO] [1775033725.869625092, 58.580000000]: Control Output - Linear X: -1.00, Linear Y: 0.02, Angular Z: 1.00
+[ INFO] [1775033726.036160725, 58.680000000]: Current Position - X: 1.04, Y: -0.03, Theta: 0.32
+[ INFO] [1775033726.036244058, 58.680000000]: Lookahead Point - X: -0.01, Y: 0.00, Theta: 3.11
+[ INFO] [1775033726.036270364, 58.680000000]: Control Output - Linear X: -1.00, Linear Y: 0.05, Angular Z: 1.00
+[ INFO] [1775033726.204496811, 58.780000000]: Current Position - X: 0.94, Y: -0.06, Theta: 0.32
+[ INFO] [1775033726.204585809, 58.780000000]: Lookahead Point - X: 1.45, Y: 2.08, Theta: 1.34
+[ INFO] [1775033726.204615635, 58.780000000]: Control Output - Linear X: 1.00, Linear Y: 1.00, Angular Z: -0.76
+[ INFO] [1775033726.440864169, 58.880000000]: Current Position - X: 0.85, Y: -0.09, Theta: 0.35
+[ INFO] [1775033726.440946479, 58.880000000]: Lookahead Point - X: 1.45, Y: 2.08, Theta: 1.30
+[ INFO] [1775033726.440975280, 58.880000000]: Control Output - Linear X: 0.68, Linear Y: 1.00, Angular Z: 0.88
+[ INFO] [1775033726.632087386, 58.980000000]: Current Position - X: 0.84, Y: -0.09, Theta: 0.38
+[ INFO] [1775033726.632175104, 58.980000000]: Lookahead Point - X: 1.45, Y: 2.08, Theta: 1.30
+[ INFO] [1775033726.632206530, 58.980000000]: Control Output - Linear X: 0.62, Linear Y: 1.00, Angular Z: 0.89
+[ INFO] [1775033726.796914676, 59.080000000]: Current Position - X: 0.86, Y: -0.08, Theta: 0.39
+[ INFO] [1775033726.797003066, 59.080000000]: Lookahead Point - X: 1.45, Y: 2.08, Theta: 1.31
+[ INFO] [1775033726.797032348, 59.080000000]: Control Output - Linear X: 0.55, Linear Y: 1.00, Angular Z: 0.92
+[ INFO] [1775033726.961846389, 59.180000000]: Current Position - X: 0.93, Y: -0.05, Theta: 0.39
+[ INFO] [1775033726.961942523, 59.180000000]: Lookahead Point - X: 1.45, Y: 2.08, Theta: 1.33
+[ INFO] [1775033726.961978302, 59.180000000]: Control Output - Linear X: 0.46, Linear Y: 1.00, Angular Z: 0.96
+[ INFO] [1775033727.226762942, 59.280000000]: Current Position - X: 1.03, Y: -0.01, Theta: 0.40
+[ INFO] [1775033727.226875525, 59.280000000]: Lookahead Point - X: -0.01, Y: 0.00, Theta: 3.13
+[ INFO] [1775033727.226908871, 59.280000000]: Control Output - Linear X: -1.00, Linear Y: -1.00, Angular Z: 1.00
+[ INFO] [1775033727.460741714, 59.380000000]: Current Position - X: 1.07, Y: -0.00, Theta: 0.44
+[ INFO] [1775033727.460829080, 59.380000000]: Lookahead Point - X: -0.01, Y: 0.00, Theta: 3.14
+[ INFO] [1775033727.460856889, 59.380000000]: Control Output - Linear X: -1.00, Linear Y: -0.01, Angular Z: 1.00
+[ INFO] [1775033727.628216644, 59.480000000]: Current Position - X: 1.07, Y: -0.01, Theta: 0.46
+[ INFO] [1775033727.628337068, 59.480000000]: Lookahead Point - X: -0.01, Y: 0.00, Theta: 3.14
+[ INFO] [1775033727.628398192, 59.480000000]: Control Output - Linear X: -1.00, Linear Y: 0.01, Angular Z: 1.00
+[ INFO] [1775033727.795150420, 59.580000000]: Current Position - X: 1.03, Y: -0.03, Theta: 0.47
+[ INFO] [1775033727.795232954, 59.580000000]: Lookahead Point - X: -0.01, Y: 0.00, Theta: 3.12
+[ INFO] [1775033727.795262139, 59.580000000]: Control Output - Linear X: -1.00, Linear Y: 0.05, Angular Z: 1.00
+[ INFO] [1775033727.961624040, 59.680000000]: Current Position - X: 0.96, Y: -0.06, Theta: 0.47
+[ INFO] [1775033727.961713453, 59.680000000]: Lookahead Point - X: 1.45, Y: 2.08, Theta: 1.35
+[ INFO] [1775033727.961743055, 59.680000000]: Control Output - Linear X: 1.00, Linear Y: 1.00, Angular Z: -0.89
+[ INFO] [1775033728.174003142, 59.780000000]: Current Position - X: 0.89, Y: -0.10, Theta: 0.50
+[ INFO] [1775033728.174089099, 59.780000000]: Lookahead Point - X: 1.45, Y: 2.08, Theta: 1.32
+[ INFO] [1775033728.174120301, 59.780000000]: Control Output - Linear X: 0.63, Linear Y: 1.00, Angular Z: 0.76
+[ INFO] [1775033728.436152103, 59.880000000]: Current Position - X: 0.88, Y: -0.10, Theta: 0.50
+[ INFO] [1775033728.436272207, 59.880000000]: Lookahead Point - X: 1.45, Y: 2.08, Theta: 1.32
+[ INFO] [1775033728.436309425, 59.880000000]: Control Output - Linear X: 0.57, Linear Y: 1.00, Angular Z: 0.81
+[ INFO] [1775033728.619616338, 59.980000000]: Current Position - X: 0.92, Y: -0.08, Theta: 0.51
+[ INFO] [1775033728.619696663, 59.980000000]: Lookahead Point - X: 1.45, Y: 2.08, Theta: 1.33
+[ INFO] [1775033728.619723065, 59.980000000]: Control Output - Linear X: 0.48, Linear Y: 1.00, Angular Z: 0.84
+[ INFO] [1775033728.913265316, 60.080000000]: Current Position - X: 0.99, Y: -0.04, Theta: 0.51
+[ INFO] [1775033728.913349769, 60.080000000]: Lookahead Point - X: 1.45, Y: 2.08, Theta: 1.36
+[ INFO] [1775033728.913378059, 60.080000000]: Control Output - Linear X: 0.39, Linear Y: 1.00, Angular Z: 0.87
+[ INFO] [1775033729.217139331, 60.180000000]: Current Position - X: 1.05, Y: -0.02, Theta: 0.56
+[ INFO] [1775033729.217221704, 60.180000000]: Lookahead Point - X: -0.01, Y: 0.00, Theta: 3.13
+[ INFO] [1775033729.217249034, 60.180000000]: Control Output - Linear X: -1.00, Linear Y: -1.00, Angular Z: 1.00
+[ INFO] [1775033729.504639453, 60.280000000]: Current Position - X: 1.07, Y: -0.00, Theta: 0.55
+[ INFO] [1775033729.504727426, 60.280000000]: Lookahead Point - X: -0.01, Y: 0.00, Theta: 3.14
+[ INFO] [1775033729.504758244, 60.280000000]: Control Output - Linear X: -1.00, Linear Y: -0.01, Angular Z: 1.00
+[ INFO] [1775033729.693398242, 60.380000000]: Current Position - X: 1.04, Y: -0.02, Theta: 0.55
+[ INFO] [1775033729.693480744, 60.380000000]: Lookahead Point - X: -0.01, Y: 0.00, Theta: 3.12
+[ INFO] [1775033729.693507945, 60.380000000]: Control Output - Linear X: -1.00, Linear Y: 0.04, Angular Z: 1.00
+[ INFO] [1775033729.974450121, 60.480000000]: Current Position - X: 0.98, Y: -0.06, Theta: 0.55
+[ INFO] [1775033729.974541135, 60.480000000]: Lookahead Point - X: 1.45, Y: 2.08, Theta: 1.35
+[ INFO] [1775033729.974571665, 60.480000000]: Control Output - Linear X: 1.00, Linear Y: 1.00, Angular Z: -0.96
+[ INFO] [1775033730.217570270, 60.580000000]: Current Position - X: 0.93, Y: -0.08, Theta: 0.55
+[ INFO] [1775033730.217661476, 60.580000000]: Lookahead Point - X: 1.45, Y: 2.08, Theta: 1.34
+[ INFO] [1775033730.217689638, 60.580000000]: Control Output - Linear X: 0.55, Linear Y: 1.00, Angular Z: 0.78
+[ INFO] [1775033730.383442882, 60.680000000]: Current Position - X: 0.94, Y: -0.08, Theta: 0.55
+[ INFO] [1775033730.383528999, 60.680000000]: Lookahead Point - X: 1.45, Y: 2.08, Theta: 1.34
+[ INFO] [1775033730.383556425, 60.680000000]: Control Output - Linear X: 0.50, Linear Y: 1.00, Angular Z: 0.80
+[ INFO] [1775033730.549574997, 60.780000000]: Current Position - X: 0.98, Y: -0.06, Theta: 0.55
+[ INFO] [1775033730.549660539, 60.780000000]: Lookahead Point - X: 1.45, Y: 2.08, Theta: 1.36
+[ INFO] [1775033730.549690781, 60.780000000]: Control Output - Linear X: 0.43, Linear Y: 1.00, Angular Z: 0.82
+[ INFO] [1775033730.716507515, 60.880000000]: Current Position - X: 1.06, Y: -0.01, Theta: 0.55
+[ INFO] [1775033730.716592288, 60.880000000]: Lookahead Point - X: -0.01, Y: 0.00, Theta: 3.13
+[ INFO] [1775033730.716620002, 60.880000000]: Control Output - Linear X: -1.00, Linear Y: -1.00, Angular Z: 1.00
+[ INFO] [1775033731.009590999, 60.980000000]: Current Position - X: 1.12, Y: 0.03, Theta: 0.57
+[ INFO] [1775033731.009674269, 60.980000000]: Lookahead Point - X: -0.01, Y: 0.00, Theta: -3.12
+[ INFO] [1775033731.009719423, 60.980000000]: Control Output - Linear X: -1.00, Linear Y: -0.06, Angular Z: 1.00
+[ INFO] [1775033731.190177185, 61.080000000]: Current Position - X: 1.13, Y: 0.02, Theta: 0.59
+[ INFO] [1775033731.190268294, 61.080000000]: Lookahead Point - X: -0.01, Y: 0.00, Theta: -3.12
+[ INFO] [1775033731.190296424, 61.080000000]: Control Output - Linear X: -1.00, Linear Y: -0.02, Angular Z: 1.00
+[ INFO] [1775033731.356924716, 61.180000000]: Current Position - X: 1.09, Y: 0.00, Theta: 0.59
+[ INFO] [1775033731.357004049, 61.180000000]: Lookahead Point - X: -0.01, Y: 0.00, Theta: -3.14
+[ INFO] [1775033731.357033427, 61.180000000]: Control Output - Linear X: -1.00, Linear Y: 0.02, Angular Z: 1.00
+[ INFO] [1775033731.523567858, 61.280000000]: Current Position - X: 1.04, Y: -0.04, Theta: 0.60
+[ INFO] [1775033731.523682073, 61.280000000]: Lookahead Point - X: -0.01, Y: 0.00, Theta: 3.11
+[ INFO] [1775033731.523733500, 61.280000000]: Control Output - Linear X: -0.99, Linear Y: 0.08, Angular Z: 1.00
+[ INFO] [1775033731.741426827, 61.380000000]: Current Position - X: 0.96, Y: -0.09, Theta: 0.60
+[ INFO] [1775033731.741512240, 61.380000000]: Lookahead Point - X: 1.45, Y: 2.08, Theta: 1.35
+[ INFO] [1775033731.741540146, 61.380000000]: Control Output - Linear X: 1.00, Linear Y: 1.00, Angular Z: -1.00
+[ INFO] [1775033731.976512277, 61.480000000]: Current Position - X: 0.90, Y: -0.13, Theta: 0.60
+[ INFO] [1775033731.976594938, 61.480000000]: Lookahead Point - X: 0.86, Y: 0.89, Theta: 1.61
+[ INFO] [1775033731.976624060, 61.480000000]: Control Output - Linear X: -0.57, Linear Y: -0.13, Angular Z: 1.00
+[ INFO] [1775033732.141981861, 61.580000000]: Current Position - X: 0.89, Y: -0.14, Theta: 0.62
+[ INFO] [1775033732.142086668, 61.580000000]: Lookahead Point - X: 0.86, Y: 0.89, Theta: 1.60
+[ INFO] [1775033732.142121774, 61.580000000]: Control Output - Linear X: -0.02, Linear Y: 1.00, Angular Z: 0.94
+[ INFO] [1775033732.381446796, 61.680000000]: Current Position - X: 0.90, Y: -0.12, Theta: 0.67
+[ INFO] [1775033732.381526961, 61.680000000]: Lookahead Point - X: 0.86, Y: 0.89, Theta: 1.61
+[ INFO] [1775033732.381553010, 61.680000000]: Control Output - Linear X: -0.04, Linear Y: 0.99, Angular Z: 0.89
+[ INFO] [1775033732.681810171, 61.780000000]: Current Position - X: 0.91, Y: -0.12, Theta: 0.75
+[ INFO] [1775033732.681927491, 61.780000000]: Lookahead Point - X: 0.86, Y: 0.89, Theta: 1.62
+[ INFO] [1775033732.681964517, 61.780000000]: Control Output - Linear X: -0.07, Linear Y: 1.00, Angular Z: 0.82
+[ INFO] [1775033732.980775700, 61.880000000]: Current Position - X: 0.91, Y: -0.13, Theta: 0.79
+[ INFO] [1775033732.980865178, 61.880000000]: Lookahead Point - X: 0.86, Y: 0.89, Theta: 1.62
+[ INFO] [1775033732.980896060, 61.880000000]: Control Output - Linear X: -0.04, Linear Y: 1.00, Angular Z: 0.77

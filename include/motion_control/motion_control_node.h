@@ -11,19 +11,24 @@ public:
     ros::Publisher cmd_vel_pub_;
     ros::Subscriber odom_sub_;
     ros::Subscriber path_sub_;
+    ros::Timer control_timer_;
+
     
     MotionControlNode(double look_ahead_distance, PID* xpid, PID* ypid, PID* thetapid);
     ~MotionControlNode() {
         delete pure_pursuit_;
         delete[] path_;
     }
-    void odomCallback(const nav_msgs::Odometry::ConstPtr& msg);
     void pathCallback(const nav_msgs::Path::ConstPtr& msg);
-
+    void controlCallback(const ros::TimerEvent& event);
+    void odomCallback(const nav_msgs::Odometry::ConstPtr& msg);
+    
 private:
     point2D current_position_;
     point2D* path_;
     int path_length_;
     PurePursuit* pure_pursuit_;
     double last_time_;
+
+
 };

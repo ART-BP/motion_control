@@ -9,7 +9,7 @@
   
   <link name="base_link">
     <inertial>
-      <origin xyz="0.021112 0 -0.005366" rpy="0 0 0" />
+      <origin xyz="0.021112 0 -0.030000" rpy="0 0 0" />
       <mass value="6.921" />
       <inertia ixx="0.02448" ixy="0.00012166" ixz="0.0014849" iyy="0.098077" iyz="-3.12E-05" izz="0.107" />
     </inertial>
@@ -239,6 +239,7 @@
     <parent link="FL_calf" />
     <child link="FL_foot" />
     <axis xyz="0 1 0" />
+    <dynamics damping="1.2" friction="0.2" />
       
       <limit effort="23.7" velocity="30.1" />
   </joint>
@@ -393,6 +394,7 @@
     <parent link="FR_calf" />
     <child link="FR_foot" />
     <axis xyz="0 1 0" />
+    <dynamics damping="1.2" friction="0.2" />
       <limit effort="23.7" velocity="30.1" />
   </joint>
 
@@ -547,6 +549,7 @@
     <parent link="RL_calf" />
     <child link="RL_foot" />
     <axis xyz="0 1 0" />
+    <dynamics damping="1.2" friction="0.2" />
       <limit effort="23.7" velocity="30.1" />
   </joint>
 
@@ -691,17 +694,50 @@
       <origin rpy="0 0 0" xyz="0 -0.0 0" />
       <geometry>
         <mesh filename="package://motion_control/urdf/dae/right_wheel.dae" />
-        
       </geometry>
     </collision>
   </link>
+  
   <joint name="RR_foot_joint" type="continuous">
     <origin xyz="-0.0 0 -0.2264" rpy="0 0 0" />
     <parent link="RR_calf" />
     <child link="RR_foot" />
     <axis xyz="0 1 0" />
+    <dynamics damping="1.2" friction="0.2" />
       <limit effort="23.7" velocity="30.1" />
   </joint>
+  <gazebo reference="FL_foot">
+    <mu1>1.4</mu1>
+    <mu2>1.4</mu2>
+    <kp>1000000.0</kp>
+    <kd>10.0</kd>
+    <minDepth>0.001</minDepth>
+    <maxVel>0.2</maxVel>
+  </gazebo>
+  <gazebo reference="FR_foot">
+    <mu1>1.4</mu1>
+    <mu2>1.4</mu2>
+    <kp>1000000.0</kp>
+    <kd>10.0</kd>
+    <minDepth>0.001</minDepth>
+    <maxVel>0.2</maxVel>
+  </gazebo>
+  <gazebo reference="RL_foot">
+    <mu1>1.4</mu1>
+    <mu2>1.4</mu2>
+    <kp>1000000.0</kp>
+    <kd>10.0</kd>
+    <minDepth>0.001</minDepth>
+    <maxVel>0.2</maxVel>
+  </gazebo>
+  <gazebo reference="RR_foot">
+    <mu1>1.4</mu1>
+    <mu2>1.4</mu2>
+    <kp>1000000.0</kp>
+    <kd>10.0</kd>
+    <minDepth>0.001</minDepth>
+    <maxVel>0.2</maxVel>
+  </gazebo>
   <link name="imu">
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0" />
@@ -740,7 +776,7 @@
       <rightFrontJoint>FR_foot_joint</rightFrontJoint>
       <leftRearJoint>RL_foot_joint</leftRearJoint>
       <rightRearJoint>RR_foot_joint</rightRearJoint>
-      <wheelSeparation>0.213</wheelSeparation>
+      <wheelSeparation>0.284</wheelSeparation>
       <wheelDiameter>0.10</wheelDiameter>
       <torque>10.0</torque>
       <commandTopic>cmd_vel</commandTopic>
