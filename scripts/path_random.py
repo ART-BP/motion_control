@@ -46,8 +46,8 @@ def main():
     frame_id = rospy.get_param("~frame_id", "odom")
     num_send = int(rospy.get_param("~num_send", 5))
 
-    min_points = int(rospy.get_param("~min_points", 5))
-    max_points = int(rospy.get_param("~max_points", 20))
+    min_points = int(rospy.get_param("~min_points", 4))
+    max_points = int(rospy.get_param("~max_points", 8))
     min_xy = float(rospy.get_param("~min_xy", -15.0))
     max_xy = float(rospy.get_param("~max_xy", 15.0))
 
