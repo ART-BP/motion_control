@@ -10,7 +10,7 @@ bool PurePursuit::findLookaheadPoint(const point2D& current_position, point2D* p
     if(path_length <= 0) {
         return false; // Return false if the path is empty
     }
-    for (int i = 0; i < path_length; ++i) {
+    for (int i = last_lookahead_index_; i < path_length; ++i) {
         double dx = path[i].x - current_position.x;
         double dy = path[i].y - current_position.y;
         double distance = sqrt(dx * dx + dy * dy);
@@ -80,4 +80,11 @@ bool PurePursuit::motionControl(const point2D& current_position, point2D* path, 
     ROS_INFO("Lookahead Point - X: %.2f, Y: %.2f, Theta: %.2f", lookahead_point.x, lookahead_point.y, lookahead_point.theta);
     ROS_INFO("Control Output - Linear X: %.2f, Linear Y: %.2f, Angular Z: %.2f", control_x, control_y, control_theta);
     return true;
+}
+
+void PurePursuit::reset_controllers() {
+    if (xpid_) xpid_->reset();
+    if (ypid_) ypid_->reset();
+    if (thetapid_) thetapid_->reset();
+    last_lookahead_index_ = 0;
 }

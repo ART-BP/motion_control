@@ -58,6 +58,7 @@ void MotionControlNode::pathCallback(const nav_msgs::Path::ConstPtr& msg) {
         path_[i].y = msg->poses[i].pose.position.y;
     }
     enable_motion_control_ = true;
+    pure_pursuit_->reset_controllers();
 }
 
 int main(int argc, char** argv) {

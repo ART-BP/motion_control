@@ -35,9 +35,13 @@ public:
 
     bool motionControl(const point2D& current_position, point2D* path, int path_length,
         double dt, CmdVel& cmd_vel);
+
+    void reset_controllers();
+
 private:
     double look_ahead_distance_;
     PID* xpid_;
     PID* ypid_;
     PID* thetapid_;
+    int last_lookahead_index_;
 };
