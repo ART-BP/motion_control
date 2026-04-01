@@ -57,9 +57,9 @@ bool PurePursuit::motionControl(const point2D& current_position, point2D* path, 
         return false; // Return false if no valid target point is found
     }
 
-    double control_x = xpid_->calculate(lookahead_point.x, current_position.x, dt);
-    double control_y = ypid_->calculate(lookahead_point.y, current_position.y, dt);
-    double control_theta = thetapid_->calculate(lookahead_point.theta, current_position.theta, dt);
+    double control_x = xpid_->calculate(lookahead_point.x, current_position.x, dt, 1.0);
+    double control_y = ypid_->calculate(lookahead_point.y, current_position.y, dt, 1.0);
+    double control_theta = thetapid_->calculate(lookahead_point.theta, current_position.theta, dt, 1.0);
 
     cmd_vel.linear_x = control_x;
     cmd_vel.linear_y = control_y;
