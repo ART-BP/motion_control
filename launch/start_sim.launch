@@ -26,5 +26,6 @@
         args="-urdf -param robot_description -model go2w -x $(arg x) -y $(arg y) -z $(arg z)" 
         output="screen" />
 
+  <node pkg="motion_control" type="motion_control_node" name="motion_control_node" output="screen"/>
   <node if="$(arg rviz)" pkg="rviz" type="rviz" name="rviz" args="-d $(find motion_control)/rviz/motion_control.rviz"/>
 </launch>
