@@ -37,9 +37,35 @@ public:
         double dt, CmdVel& cmd_vel);
 
     void reset_controllers();
+    
+    void setLookAheadDistance(double look_ahead_distance) {
+        look_ahead_distance_ = look_ahead_distance;
+    }
+
+    void setXPIDParameters(double kp, double ki, double kd) {
+        if (xpid_) {
+            xpid_->setParameters(kp, ki, kd);
+        }
+    }
+
+    void setYPIDParameters(double kp, double ki, double kd) {
+        if (ypid_) {
+            ypid_->setParameters(kp, ki, kd);
+        }
+    }
+
+    void setThetaPIDParameters(double kp, double ki, double kd) {
+        if (thetapid_) {
+            thetapid_->setParameters(kp, ki, kd);
+        }
+    }
+
+    point2D* insertPoints(point2D* path, int& path_length);
+
 
 private:
     double look_ahead_distance_;
+    double turn_ang_threshold_;
     PID* xpid_;
     PID* ypid_;
     PID* thetapid_;

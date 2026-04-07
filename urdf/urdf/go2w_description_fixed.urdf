@@ -770,20 +770,12 @@
       <jointName>FL_foot_joint,FR_foot_joint,RL_foot_joint,RR_foot_joint</jointName>
     </plugin>
 
-    <plugin name="go2w_skid_steer_drive" filename="libgazebo_ros_skid_steer_drive.so">
+    <plugin name="go2w_planar_move" filename="libgazebo_ros_planar_move.so">
       <robotNamespace>/</robotNamespace>
-      <leftFrontJoint>FL_foot_joint</leftFrontJoint>
-      <rightFrontJoint>FR_foot_joint</rightFrontJoint>
-      <leftRearJoint>RL_foot_joint</leftRearJoint>
-      <rightRearJoint>RR_foot_joint</rightRearJoint>
-      <wheelSeparation>0.284</wheelSeparation>
-      <wheelDiameter>0.10</wheelDiameter>
-      <torque>10.0</torque>
       <commandTopic>cmd_vel</commandTopic>
       <odometryTopic>odom</odometryTopic>
       <odometryFrame>odom</odometryFrame>
       <robotBaseFrame>base_footprint</robotBaseFrame>
-      <broadcastTF>true</broadcastTF>
       <updateRate>100</updateRate>
     </plugin>
   </gazebo>
